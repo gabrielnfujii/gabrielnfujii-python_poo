@@ -14,10 +14,10 @@ class Carro:
         self.motor_on = motor
 
     def ligar(self):
-        if not self.motor_on:
-            self.motor_on = True
-        else:
-            raise Exception("Erro: Motor já ligado!")
+            if not self.motor_on:
+                self.motor_on = True
+            else:
+                raise Exception("Erro: Motor já ligado!")
 
     def acelerar(self, velocidade : float, tempo : float):
         if self.motor_on:
