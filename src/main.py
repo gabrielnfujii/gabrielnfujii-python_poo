@@ -4,7 +4,7 @@ def simular_carro(carro : Carro):
     print('2- Desligar motor')
     print('3- Acelerar')
 
-    op = 1
+    op = 0
     while op not in (1, 2, 3):
         op = int(input("Digite as opcoes[1-3]: "))
 
