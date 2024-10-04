@@ -1,7 +1,8 @@
 import pickle
 from typing import List
-from pessoas import *
+from commom import *
 from datetime import *
+from Interface_Eleicao import Transparencia
 
 class Urna:
     mesario : Pessoa

@@ -1,7 +1,7 @@
 import pickle
 import traceback
 import gerenciar_urna
-from pessoas import *
+from commom import *
 
 FILE_ELEITORES = 'eleitores.pkl'
 FILE_CANDIDATOS = 'candidatos.pkl'

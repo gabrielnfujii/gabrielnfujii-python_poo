@@ -1,4 +1,4 @@
-from pessoas import *
+from commom import *
 from eleicao import Urna
 
 def iniciar_urna(eleitores, candidatos):
