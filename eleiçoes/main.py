@@ -1,7 +1,7 @@
 import pickle
 import traceback
 import gerenciar_urna
-from commom import *
+from common import *
 
 FILE_ELEITORES = 'eleitores.pkl'
 FILE_CANDIDATOS = 'candidatos.pkl'
@@ -13,12 +13,10 @@ def menu():
     print("4-Listar Candidatos")
     print("5-Iniciar Urna")
     print("6-Testar Urna")
-    print("7-emitir zeresima")
-    print(("8-fechar urna"))
-    print("9-saindo")
-    op = int(input("Digite a opcao [1 a 9]? "))
-    while op not in range(1, 10):
-        op = int(input("Digite a opcao [1 a 9]? "))
+    print("7-Sair")
+    op = int(input("Digite a opcao [1 a 7]? "))
+    while op not in range(1, 8):
+        op = int(input("Digite a opcao [1 a 7]? "))
     return op
 
 def inserir_eleitor(eleitores):
@@ -106,7 +104,7 @@ if __name__ == "__main__":
         print("Arquivo nao encontrado, nenhum candidato carregado!")
 
     opcao = 1
-    while opcao in range(1,10):
+    while opcao in range(1,8):
         try:
             opcao = menu()
 
@@ -124,12 +122,9 @@ if __name__ == "__main__":
             elif opcao == 6:
                 gerenciar_urna.votar(urna)
             elif opcao == 7:
-                gerenciar_urna.emitir_zeresima(urna)
-            elif opcao == 8:
-                gerenciar_urna.fechar(urna)
-            elif opcao == 9:
                 print("Saindo!")
                 break
         except Exception as e:
             #traceback.print_exc()
             print(e)
+

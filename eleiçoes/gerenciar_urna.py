@@ -1,4 +1,4 @@
-from commom import *
+from common import *
 from eleicao import Urna
 
 def iniciar_urna(eleitores, candidatos):
@@ -25,13 +25,6 @@ def votar(urna : Urna):
     print(eleitor)
     print("Pode votar!")
     print("===========")
-    voto = int(input("Digite o numero do candidato: ou 0 para branco"))
+    voto = int(input("Digite o numero do candidato: "))
     urna.registrar_voto(eleitor, voto)
 
-def emitir_zeresima(urna : Urna):
-    print(urna)
-    urna.zeresima()
-
-def fechar(urna: Urna):
-    print(urna)
-    urna.encerrar()
